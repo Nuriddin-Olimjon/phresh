@@ -4,6 +4,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from app.api.routes import router as api_router
 from app.core import config, tasks
 
+
 def get_application():
     app = FastAPI(title=config.PROJECT_NAME, version=config.VERSION)
 
